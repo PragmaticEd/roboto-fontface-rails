@@ -1,4 +1,4 @@
-$roboto-font-path: '../../../fonts' !default;
+$roboto-font-path: 'roboto-fontface/fonts' !default;
 
 @mixin roboto-font($variant, $type, $weight, $style) {
 
@@ -6,27 +6,27 @@ $roboto-font-path: '../../../fonts' !default;
 
     @font-face {
         font-family: '#{$variant}';
-        src: url('#{$font-full-path}-#{$type}.eot');
+        src: font-url('#{$font-full-path}-#{$type}.eot');
         src: local('#{$variant} #{$type}'),
              local('#{$variant}-#{$type}'),
-             url('#{$font-full-path}-#{$type}.eot?#iefix') format('embedded-opentype'),
-             url('#{$font-full-path}-#{$type}.woff2') format('woff2'),
-             url('#{$font-full-path}-#{$type}.woff') format('woff'),
-             url('#{$font-full-path}-#{$type}.ttf') format('truetype'),
-             url('#{$font-full-path}-#{$type}.svg##{$variant}') format('svg');
+             font-url('#{$font-full-path}-#{$type}.eot?#iefix') format('embedded-opentype'),
+             font-url('#{$font-full-path}-#{$type}.woff2') format('woff2'),
+             font-url('#{$font-full-path}-#{$type}.woff') format('woff'),
+             font-url('#{$font-full-path}-#{$type}.ttf') format('truetype'),
+             font-url('#{$font-full-path}-#{$type}.svg##{$variant}') format('svg');
         font-weight: $weight;
         font-style: $style;
     }
 
     @font-face {
         font-family: '#{$variant}-#{$type}';
-        src: url('#{$font-full-path}-#{$type}.eot');
+        src: font-url('#{$font-full-path}-#{$type}.eot');
         src: local('#{$variant} #{$type}'),
              local('#{$variant}-#{$type}'),
-             url('#{$font-full-path}-#{$type}.eot?#iefix') format('embedded-opentype'),
-             url('#{$font-full-path}-#{$type}.woff2') format('woff2'),
-             url('#{$font-full-path}-#{$type}.woff') format('woff'),
-             url('#{$font-full-path}-#{$type}.ttf') format('truetype'),
-             url('#{$font-full-path}-#{$type}.svg##{$variant}') format('svg');
+             font-url('#{$font-full-path}-#{$type}.eot?#iefix') format('embedded-opentype'),
+             font-url('#{$font-full-path}-#{$type}.woff2') format('woff2'),
+             font-url('#{$font-full-path}-#{$type}.woff') format('woff'),
+             font-url('#{$font-full-path}-#{$type}.ttf') format('truetype'),
+             font-url('#{$font-full-path}-#{$type}.svg##{$variant}') format('svg');
     }
 }

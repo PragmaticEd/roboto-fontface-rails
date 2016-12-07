@@ -10,13 +10,10 @@ module RobotoFontfaceRails
         # Put exceptions here.
       end
     end
-    # Uncomment if migrations need to be shared
-    # initializer :append_migrations do |app|
-    #   unless app.root.to_s.match root.to_s
-    #     config.paths["db/migrate"].expanded.each do |expanded_path|
-    #       app.config.paths["db/migrate"] << expanded_path
-    #     end
-    #   end
-    # end
+
+    initializer 'roboto-fontface-rails.assets.precompile', group: :all do |app|
+      app.config.assets.precompile << 'roboto-fontface/css/roboto/sass/roboto-fontface'
+      app.config.assets.precompile << 'roboto-fontface/fonts/*'
+    end
   end
 end
