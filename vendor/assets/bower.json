@@ -1,0 +1,9 @@
+{
+  "name": "dsl-generated-dependencies",
+  "dependencies": {
+    "roboto-fontface": "latest"
+  },
+  "resolutions": {
+    "roboto-fontface": "0.6.0"
+  }
+}
