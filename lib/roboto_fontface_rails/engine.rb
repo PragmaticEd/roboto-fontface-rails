@@ -1,5 +1,3 @@
-require "roboto_fontface_rails/configuration"
-
 module RobotoFontfaceRails
   class Engine < ::Rails::Engine
     # Initialize engine dependencies on wrapper application
