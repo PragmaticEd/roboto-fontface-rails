@@ -2,11 +2,11 @@ module RobotoFontfaceRails
   class Engine < ::Rails::Engine
     # Initialize engine dependencies on wrapper application
     Gem.loaded_specs["roboto_fontface_rails"].dependencies.each do |d|
-      begin
+      #begin
         require d.name
-      rescue LoadError => e
-        # Put exceptions here.
-      end
+      #rescue LoadError => e
+      #  # Put exceptions here.
+      #end
     end
 
     initializer 'roboto-fontface-rails.assets.precompile', group: :all do |app|
